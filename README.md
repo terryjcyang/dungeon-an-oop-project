@@ -2,7 +2,7 @@
 
 A text-based dungeon crawler game developed in C++ demonstrating Object-Oriented Programming principles. Navigate through different rooms, battle monsters, interact with NPCs, manage resources, and survive to escape the dungeon!
 
-## 🎮 Game Overview
+## Game Overview
 
 In this adventure game, you play as a brave adventurer trapped in a dungeon. Your goal is to defeat the Demon King and escape. Along the way, you'll need to manage your health, hunger, and thirst while battling monsters, trading with NPCs, and collecting items.
 
@@ -16,7 +16,7 @@ In this adventure game, you play as a brave adventurer trapped in a dungeon. You
 - **Item System**: Collect weapons, food, and special items from chests and defeated monsters
 - **Environmental Hazards**: Sandstorms in deserts, poison in swamps, varying resource consumption rates
 
-## 🗺️ Map Structure
+## Map Structure
 
 ```
 [Room 0: Lobby Square]
@@ -35,7 +35,7 @@ In this adventure game, you play as a brave adventurer trapped in a dungeon. You
 | Forest    | -20         | -5          | Lake discovery                           |
 | Swamp     | -7          | -13         | Poison effect, Lotus leaf discovery      |
 
-## 🎯 Game Mechanics
+## Game Mechanics
 
 ### Player Stats
 
@@ -73,7 +73,7 @@ In this adventure game, you play as a brave adventurer trapped in a dungeon. You
 | Ancient Crocodile | Swamp    | 500 | 230 | 150 | -                   |
 | Demon the King    | Castle   | 450 | 310 | 210 | Final boss          |
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 Dungeon_code/
@@ -100,7 +100,7 @@ Object (Abstract Base)
     └── NPC
 ```
 
-## 🔧 Building & Running
+## Building & Running
 
 ### Prerequisites
 
@@ -144,7 +144,7 @@ g++ -std=c++11 -o dungeon main.cpp Dungeon.cpp Object.cpp GameCharacter.cpp Play
 ./dungeon
 ```
 
-## 🎮 How to Play
+## How to Play
 
 1. **Start**: Enter your name and allocate your 2000 stat points
 2. **Navigate**: Use the action menu to move between rooms
@@ -162,7 +162,7 @@ The game uses a numbered menu system. Simply enter the number corresponding to y
 - `3` - Open Backpack
 - `4+` - Interact with objects in the room
 
-## 📚 OOP Concepts Demonstrated
+## OOP Concepts Demonstrated
 
 - **Inheritance**: `GameCharacter` extends `Object`; `Player`, `Monster`, `NPC` extend `GameCharacter`
 - **Polymorphism**: Virtual `triggerEvent()` method with different implementations
@@ -170,17 +170,17 @@ The game uses a numbered menu system. Simply enter the number corresponding to y
 - **Abstraction**: Pure virtual functions in `Object` base class
 - **Composition**: Rooms contain collections of Objects; Characters have inventories of Items
 
-## 📁 Additional Files
+## Additional Files
 
 - `spec.pdf` - Project specification document
 - `report.pdf` - Project report
 - `demo.mp4` - Gameplay demonstration video
 - `Dungeon.drawio` - Map/architecture diagram
 
-## 📝 License
+## License
 
 This project was created as a course assignment for NYCU CS.
 
 ---
 
-_Kill all monsters and survive... Good luck, adventurer!_ 😊
+_Kill all monsters and survive... Good luck, adventurer!_
